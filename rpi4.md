@@ -48,7 +48,7 @@ $ sudo reboot
 pi@raspberrypi:~ $ uname -a
 Linux raspberrypi 5.4.83-v7l+ #1379 SMP Mon Dec 14 13:11:54 GMT 2020 armv7l GNU/Linux
 
-pi@raspberrypi:~ $ er_version
+pi@raspberrypi:~ $ vcgencmd bootloader_version
 Sep  3 2020 13:11:43
 version c305221a6d7e532693cc7ff57fddfc8649def167 (release)
 timestamp 1599135103
