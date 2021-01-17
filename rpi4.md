@@ -11,8 +11,8 @@ and another one for data storage.
 
 ## USB Boot
 
-To be able boot USB Mass Storage Devices Raspberry Pi 4B bootloader EEPROM version should be Sep 3 2020 or later,
-and Raspberry Pi OS 2020-08-20 or later.
+To be able to boot from USB Mass Storage Devices, Raspberry Pi 4B bootloader EEPROM version
+should be Sep 3 2020 or later, and Raspberry Pi OS 2020-08-20 or later.
 [Check documentation](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md) for details.
 
 
