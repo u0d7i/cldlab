@@ -8,3 +8,11 @@ for passive cooling.
 
 One (bootable) Samsung FIT Plus USB 3.1 flash drive is used for system,
 and another one for data storage.
+
+At the time of writting Raspberry Pi OS 64 bit version was still in BETA.
+
+```
+$ wget -c https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip
+$ unzip 2020-08-20-raspios-buster-arm64-lite.zip
+$ sudo dd if=2020-08-20-raspios-buster-arm64-lite.img of=/dev/sdb status=progress
+```
