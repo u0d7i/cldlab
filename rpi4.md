@@ -24,13 +24,13 @@ timestamp 0
 update-time 0
 capabilities 0x00000000
 
-$ sudo apt update
-$ sudo apt full-upgrade
-$ sudo reboot
+pi@raspberrypi:~ $ sudo apt update
+pi@raspberrypi:~ $ sudo apt full-upgrade
+pi@raspberrypi:~ $ sudo reboot
 
-$ ls -al /lib/firmware/raspberrypi/bootloader/critical
+pi@raspberrypi:~ $ ls -al /lib/firmware/raspberrypi/bootloader/critical
 
-$ sudo rpi-eeprom-update
+pi@raspberrypi:~ $ sudo rpi-eeprom-update
 BCM2711 detected
 Dedicated VL805 EEPROM detected
 *** UPDATE AVAILABLE ***
@@ -42,8 +42,8 @@ VL805: update available
 CURRENT: 00013701
  LATEST: 000138a1
 
-$ sudo rpi-eeprom-update -a
-$ sudo reboot
+pi@raspberrypi:~ $ sudo rpi-eeprom-update -a
+pi@raspberrypi:~ $ sudo reboot
 
 pi@raspberrypi:~ $ uname -a
 Linux raspberrypi 5.4.83-v7l+ #1379 SMP Mon Dec 14 13:11:54 GMT 2020 armv7l GNU/Linux
@@ -59,7 +59,7 @@ timestamp 1599135103
 
 Default Raspbian / Raspberry Pi OS images are 32bit armhf (armv7l).
 
-At the time of writting Raspberry Pi OS 64bit (arm64) version [was still in BETA](https://www.raspberrypi.org/forums/viewtopic.php?t=275370).
+At the time of writting, Raspberry Pi OS 64bit (arm64) version [was still in BETA](https://www.raspberrypi.org/forums/viewtopic.php?t=275370).
 
 ```
 $ wget -c https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2020-08-24/2020-08-20-raspios-buster-arm64-lite.zip
