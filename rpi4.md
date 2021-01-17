@@ -73,10 +73,43 @@ $ sudo touch /mnt/ssh
 $ sudo umount /mnt
 ```
 
-after `apt full-upgrade`:
+Boot drom USB, after `apt full-upgrade`:
 ```
 pi@raspberrypi:~ $ uname -a
 Linux raspberrypi 5.10.5-v8+ #1392 SMP PREEMPT Sat Jan 9 18:56:30 GMT 2021 aarch64 GNU/Linux
 ```
 
 Note "aarch64" architecture instead of "armv7l".
+
+## Initial setup
+
+```
+$ sudo passwd pi
+$ sudo adduser user
+$ sudo sed -i 's/:pi/:pi,user/' /etc/group
+$ sudo sed -i 's/^pi/user/' /etc/sudoers.d/010_user-nopasswd
+$ echo "cldlab" | sudo tee /etc/hostname
+$ sudo sed -i 's/raspberrypi/cldlab/' /etc/hosts
+$ sudo hostname cldlab
+```
+
+## Data storage
+
+Insert second (data) USB flash drive.
+
+```
+$ sudo dd if=/dev/zero of=/dev/sdb bs=512 count=1
+$ sudo cfdisk /dev/sdb
+$ sudo mkfs.ext4 /dev/sdb1
+$ sudo e2label /dev/sdb1 data
+
+$ blkid /dev/sdb1
+/dev/sdb1: LABEL="data" UUID="7675.....ce22" TYPE="ext4" PARTUUID="c7fff6e7-01"
+
+$ sudo mkdir /media/data
+$ cat /etc/fstab
+$ echo "PARTUUID=c7fff6e7-01  /media/data  ext4  noatime,nofail,x-systemd.device-timeout=1ms  0  2" | sudo tee -a /etc/fstab
+$ mount -a
+$ lsblk
+$ lsblk -f
+```
