@@ -72,3 +72,11 @@ $ sudo mount /dev/sdb1 /mnt/
 $ sudo touch /mnt/ssh
 $ sudo umount /mnt
 ```
+
+after `apt full-upgrade`:
+```
+pi@raspberrypi:~ $ uname -a
+Linux raspberrypi 5.10.5-v8+ #1392 SMP PREEMPT Sat Jan 9 18:56:30 GMT 2021 aarch64 GNU/Linux
+```
+
+Note "aarch64" architecture instead of "armv7l".
