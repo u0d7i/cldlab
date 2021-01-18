@@ -113,3 +113,17 @@ $ mount -a
 $ lsblk
 $ lsblk -f
 ```
+
+## Temperature
+
+We use passive cooling with heatsink case. To see how efficient it is:
+
+- check GPU temperature:
+```
+$ vcgencmd measure_temp
+```
+
+- check CPU temperature:
+```
+~ $ cat /sys/class/thermal/thermal_zone0/temp
+```
