@@ -3,7 +3,6 @@
 Enable serial console on RPi:
 ```text
 $ sudo raspi-config
-
 ```
 "3 Interface Options" -> "P6 Serial Port" -> "Yes"
 
@@ -133,5 +132,4 @@ Unbinding devices on gw:
 ```text
 root@gw:~# usbip unbind -b 1-1
 usbip: info: unbind device on busid 1-1: complete
-
 ```
