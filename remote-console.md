@@ -9,7 +9,7 @@ $ sudo raspi-config
 Connect USB to TTL Serial Cable to RPI GPIO pins:
 
 ![USB to TTL Cable](img/usbttl-cable.png?raw=true "USB to TTL Cable")
-![Serial GPIO](img/usbttl-cable.png?raw=true "Serial GPIO")
+![Serial GPIO](img/gpiottl.png?raw=true "Serial GPIO")
 
 ## OpenWrt USB Over IP
 
