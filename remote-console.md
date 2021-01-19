@@ -5,6 +5,6 @@ Enable serial console on RPi:
 $ sudo raspi-config
 
 ```
-3 Interface Options -> P6 Serial Port
+"3 Interface Options" -> "P6 Serial Port" -> "Yes"
 
 
