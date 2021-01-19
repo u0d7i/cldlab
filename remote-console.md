@@ -11,6 +11,8 @@ Connect USB to TTL Serial Cable to RPI GPIO pins:
 ![USB to TTL Cable](img/usbttl-cable.png?raw=true "USB to TTL Cable")
 ![Serial GPIO](img/gpiottl.png?raw=true "Serial GPIO")
 
+Plug USB to OpenWrt router USB port.
+
 ## OpenWrt USB Over IP
 
 via https://openwrt.org/docs/guide-user/services/usb.iptunnel
