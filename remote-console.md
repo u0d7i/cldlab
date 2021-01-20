@@ -6,17 +6,16 @@ $ sudo raspi-config
 ```
 "3 Interface Options" -> "P6 Serial Port" -> "Yes"
 
-Connect USB to TTL Serial Cable to RPI GPIO pins:
+Connect RPI GPIO pins to USB TTL Serial Cable, and plug it to the OpenWrt router first USB port:
 
 ![USB to TTL Cable](img/usbttl-cable.png?raw=true "USB to TTL Cable")
 ![Serial GPIO](img/gpiottl.png?raw=true "Serial GPIO")
 
-Plug USB to OpenWrt router USB port.
+Connect Cisco serial console cable to USB RS232 serial adapter, and plug it to the OpenWrt router second USB port:
 
 ![Cisco Serial Cable](img/cisco-cable.png?raw=true "Cisco Serial Cable")
 ![USB Serial](img/usbserial.png?raw=true "USB Serial")
 
-Connect Cisco serial console cable to OpenWrt router second USB port.
 
 ## OpenWrt USB Over IP
 
