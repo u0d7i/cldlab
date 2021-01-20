@@ -13,8 +13,8 @@ Connect USB to TTL Serial Cable to RPI GPIO pins:
 
 Plug USB to OpenWrt router USB port.
 
-![Cisco Serial Cable](img/cisco-cable.png "Cisco Serial Cable")
-![USB Serial](img/usbserial.png "USB Serial")
+![Cisco Serial Cable](img/cisco-cable.png?raw=true "Cisco Serial Cable")
+![USB Serial](img/usbserial.png?raw=true "USB Serial")
 
 Connect Cisco serial console cable to OpenWrt router second USB port.
 
