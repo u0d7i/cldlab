@@ -9,3 +9,4 @@ This is an attempt to create a home lab for playing with cloud technology tools 
 
 - [Raspberry Pi 4 setup](rpi4.md)
 - [Remote Serial Console](remote-console.md)
+- [Docker install](docker.md)
