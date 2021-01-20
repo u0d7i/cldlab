@@ -16,7 +16,7 @@ Plug USB to OpenWrt router USB port.
 ![Cisco Serial Cable](img/cisco-cable.png "Cisco Serial Cable")
 ![USB Serial](img/usbserial.png "USB Serial")
 
-Connect Cisco serial console cable OpenWrt router second USB port.
+Connect Cisco serial console cable to OpenWrt router second USB port.
 
 ## OpenWrt USB Over IP
 
