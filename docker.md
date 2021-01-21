@@ -54,3 +54,30 @@ $ docker version
 
 $ docker run --rm hello-world
 ```
+
+## Changing Docker data dir:
+
+- stop docker service:
+```text
+$ sudo service docker stop
+```
+- create docker daemon config:
+```text
+$ echo '{ "data-root": "/media/data/docker" }' | sudo tee /etc/docker/daemon.json
+```
+- create directory:
+```text
+$ sudo mkdir -p /media/data/docker
+```
+- sync data structure:
+```text
+$ sudo rsync -axPS /var/lib/docker/ /media/data/docker
+```
+- start docked service:
+```text
+$ sudo service docker start
+```
+- verify data dir:
+```text
+$ docker info | grep 'Docker Root Dir'
+```
