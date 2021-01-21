@@ -11,3 +11,5 @@ This is an attempt to create a home lab for playing with cloud technology tools 
 - [Remote Serial Console](remote-console.md)
 - [Docker install](docker.md)
 - [Kubernetes setup (K3D + k3s)](k3d.md)
+
+![LAB](img/_lab_latest.png?raw=true "LAB")
