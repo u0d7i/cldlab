@@ -55,7 +55,7 @@ $ docker version
 $ docker run --rm hello-world
 ```
 
-## Changing Docker data dir:
+## Change Docker data dir:
 
 - stop docker service:
 ```text
