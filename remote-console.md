@@ -145,4 +145,4 @@ root@gw:~# usbip unbind -b 1-1
 usbip: info: unbind device on busid 1-1: complete
 ```
 
-![Final setup](img/remote-console.png?raw=true "Final setup"
+![Final setup](img/remote-console.png?raw=true "Final setup")
