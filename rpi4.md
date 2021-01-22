@@ -54,6 +54,7 @@ version c305221a6d7e532693cc7ff57fddfc8649def167 (release)
 timestamp 1599135103
 
 ```
+Verify it's abe to boot from USB with recommended Raspberry Pi OS version.
 
 ## Raspberry Pi OS 64 bit
 
