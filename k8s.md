@@ -76,6 +76,17 @@ To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 kind is perfect for fast testing things, but is not ment for permanent setups. [Citing](https://github.com/kubernetes-sigs/kind/issues/1867#issuecomment-698611610) kind author Benjamin Elder:
 > We do not want users becoming highly attached to their kind clusters. Testing should be from a clean state and critical data should not be stored permanently in these clusters. They should start quickly and be disposable.
 
+Kind uses random ports for each cluster, and configures kubectl contexts accordingly, which simplifies setting up several kube clusters running in parralel.
+
+```text
+$ kind create cluster --name kind1 --image rossgeorgiev/kind-node-arm64
+...
+$ kubectl config get-contexts
+CURRENT   NAME         CLUSTER      AUTHINFO     NAMESPACE
+          kind-kind    kind-kind    kind-kind    
+*         kind-kind1   kind-kind1   kind-kind1   
+```
+
 ## K3D + k3s
 
 Install k3d:
