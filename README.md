@@ -10,6 +10,6 @@ This is an attempt to create a home lab for playing with cloud technology tools 
 - [Raspberry Pi 4 setup](rpi4.md)
 - [Remote Serial Console](remote-console.md)
 - [Docker install](docker.md)
-- [Kubernetes setup (K3D + k3s)](k3d.md)
+- [Kubernetes setup](k3d.md)
 
 ![LAB](img/_lab_latest.png?raw=true "LAB")
