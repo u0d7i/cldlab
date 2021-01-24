@@ -28,8 +28,9 @@ $ dpkg --print-architecture
 arm64
 
 $ curl -Lo ./kind https://github.com/kubernetes-sigs/kind/releases/download/v0.10.0/kind-linux-arm64
-$ chmod +x ./kind 
-$ sudo mv ./kind /usr/local/bin/
+$ chmod +x ./kind
+$ sudo install -m 755 -o root -g root ./kind /usr/local/bin
+$ source <(kind completion bash)
 
 $ kind --version
 kind version 0.10.0
