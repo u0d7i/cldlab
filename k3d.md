@@ -46,7 +46,7 @@ ERROR: failed to create cluster: failed to generate kubeadm config content: fail
 Command Output: Error response from daemon: Container 8852df9c46c41ed7aeba2a8f2ac6d2208bbf920933bd3bbb54616ef09a2767ef is not running
 ```
 
-It fails, because at the time of writing, `kind` [does not provide](https://hub.docker.com/r/kindest/node/tags) arm64 docker images, see [here](https://github.com/kubernetes-sigs/kind/issues/166). You can use arm64 image from [here](https://hub.docker.com/r/rossgeorgiev/kind-node-arm64/)
+It fails, because at the time of writing `kind` [does not provide](https://hub.docker.com/r/kindest/node/tags) arm64 docker images, see [here](https://github.com/kubernetes-sigs/kind/issues/166). You can use arm64 image from [here](https://hub.docker.com/r/rossgeorgiev/kind-node-arm64/)
 ```text
 $ kind create cluster --image rossgeorgiev/kind-node-arm64:v1.20
 Creating cluster "kind" ...
@@ -72,6 +72,9 @@ KubeDNS is running at https://127.0.0.1:37033/api/v1/namespaces/kube-system/serv
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
 
 ```
+
+kind is perfect for fast testing things, but is not ment for permanent setups. [Citing](https://github.com/kubernetes-sigs/kind/issues/1867#issuecomment-698611610) kind author Benjamin Elder:
+> We do not want users becoming highly attached to their kind clusters. Testing should be from a clean state and critical data should not be stored permanently in these clusters. They should start quickly and be disposable.
 
 ## K3D + k3s
 
