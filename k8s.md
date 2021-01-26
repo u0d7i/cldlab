@@ -94,3 +94,14 @@ Install k3d:
 ```text
 $ curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | TAG=v4.0.0 bash
 ```
+
+## Helm
+
+[Helm]() is a package manager for Kubernetes.
+
+```text
+$ curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
+$ echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+$ sudo apt update
+$ sudo apt install helm
+```
