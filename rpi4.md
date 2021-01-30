@@ -88,7 +88,8 @@ Note "aarch64" architecture instead of "armv7l".
 $ sudo passwd pi
 $ sudo adduser user
 $ sudo sed -i 's/:pi/:pi,user/' /etc/group
-$ sudo sed -i 's/^pi/user/' /etc/sudoers.d/010_user-nopasswd
+$ sudo sed 's/^pi/user/' /etc/sudoers.d/010_pi-nopasswd | sudo tee /etc/sudoers.d/010_user-nopasswd
+$ sudo chmod /etc/sudoers.d/010_user-nopasswd --reference /etc/sudoers.d/010_pi-nopasswd
 $ echo "cldlab" | sudo tee /etc/hostname
 $ sudo sed -i 's/raspberrypi/cldlab/' /etc/hosts
 $ sudo hostname cldlab
